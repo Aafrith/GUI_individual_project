@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "2ZWuHtHeUaFLcfuY7erD0pef5KHLRno8Pn6dkLvWZM80d6cygU0+jXFjPfUK2nrbYgWYaeUqcPGxNK/t1eYnoA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\USER\\Desktop\\EG_2020_3795_GUI_Individual\\Individual_gui\\Individual_gui.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\mahapps.metro.iconpacks\\4.11.0\\mahapps.metro.iconpacks.4.11.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\mahapps.metro.iconpacks.material\\4.11.0\\mahapps.metro.iconpacks.material.4.11.0.nupkg.sha512"
+  ],
+  "logs": []
+}

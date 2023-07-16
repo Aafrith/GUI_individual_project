@@ -1,0 +1,163 @@
+﻿<Page x:Class="Individual_gui.Views.AddStudent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Individual_gui.Views"
+        xmlns:VM="clr-namespace:Individual_gui.VM"
+        mc:Ignorable="d" 
+        Background="Transparent"
+        Height="580" Width="1200"
+        Title="add">
+    <Page.DataContext>
+        <VM:ViewModel/>
+    </Page.DataContext>
+
+    <Grid Background="Transparent" Margin="0,3,5,-187">
+
+        <TextBlock Text="First Name"
+                   Background="Transparent"
+                FontSize="25"
+                FontWeight="Medium"
+                FontFamily="Arial bold"                             
+                Margin="30,100,798,622">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF080707" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBox Text="{Binding Firstname}"  x:Name="txtUser"
+                FontSize="25"
+                FontWeight="Medium"
+                 Background="Transparent"
+                FontFamily="Montserrat"                            
+                Foreground="Black"
+                CaretBrush="Black"
+                BorderBrush="Black"
+                BorderThickness="0,0,0,2"
+                Height="28"
+                VerticalContentAlignment="Center"
+                Margin="245,93,293,0"
+                Padding="5,0,0,0" VerticalAlignment="Top" >
+
+
+        </TextBox>
+        <TextBlock Text="Last Name"
+                Foreground="Black"
+                FontSize="25"
+                Background="Transparent"
+                FontWeight="Medium"
+                FontFamily="Arial bold"                             
+                Margin="30,151,809,583"/>
+        <TextBox Text="{Binding Lastname}" x:Name="pass"
+                FontSize="25"
+                 Background="Transparent"
+                FontWeight="Medium"
+                FontFamily="Montserrat"                            
+                Foreground="Black"
+                CaretBrush="Black"
+                BorderBrush="Black"
+                BorderThickness="0,0,0,2"
+                Height="28"
+                VerticalContentAlignment="Center"
+                Margin="246,145,293,0"
+                Padding="5,0,0,0" VerticalAlignment="Top">
+
+
+
+        </TextBox>
+
+        <TextBlock Text="Date Of Birth"
+            Foreground="Black"
+            FontSize="25"
+            FontWeight="Medium"
+            FontFamily="Arial bold"                             
+            Margin="30,252,744,476"/>
+        <DatePicker  SelectedDate="{Binding Dob}" Background="Transparent" Margin="240,252,409,484">
+        </DatePicker>
+        <TextBlock Text="Gender"
+            Foreground="Black"
+            Background="Transparent"
+            FontSize="25"
+            FontWeight="Medium"
+            FontFamily="Arial bold"                             
+            Margin="30,202,791,518"/>
+        <CheckBox IsChecked="{Binding Femalechecker}" HorizontalAlignment="Left" FontSize="20" FontFamily="a" Content="Female" Margin="244,203,0,527"/>
+        <CheckBox IsChecked="{Binding Malechecker}" HorizontalAlignment="Left" FontSize="20" FontFamily="a" Content="Male" Margin="360,203,0,527"/>
+        <Button Command="{Binding readuserCommand}"  Margin="836,447,181,241" 
+                x:Name="btnLogin"                          
+                BorderThickness="0"
+                Content="Create"
+                FontSize="12"
+                FontFamily="Montserrat"
+                Cursor="Hand" 
+                Style="{StaticResource mainbtn}"
+                            />
+
+
+        <Border Panel.ZIndex="-1" CornerRadius="10" Margin="223,2,1,187">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#9B7A01" Offset="0.094"/>
+                    <GradientStop Color="#FFF4ECEC" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Border Panel.ZIndex="-1" CornerRadius="10" Background="white" Margin="3,2,972,188"/>
+        <TextBlock Text="GPA"
+            Foreground="Black"
+            FontSize="25"
+            FontWeight="Medium"
+            FontFamily="Arial bold"                             
+            Margin="31,304,804,424"/>
+        <TextBox Text="{Binding Gpa}" x:Name="pass_Copy"
+            FontSize="25"
+            Background="Transparent"  
+            FontWeight="Medium"
+            FontFamily="Montserrat"                            
+            Foreground="Black"
+            CaretBrush="Black"
+            BorderBrush="Black"
+            BorderThickness="0,0,0,2"
+            Height="28"
+            VerticalContentAlignment="Center"
+            Margin="244,303,293,0"
+            Padding="5,0,0,0" VerticalAlignment="Top">
+
+
+
+        </TextBox>
+        <TextBox Text="{Binding Department}"  x:Name="txtUser_Copy"
+            FontSize="25"
+            FontWeight="Medium"
+            Background="Transparent"
+            FontFamily="Montserrat"                            
+            Foreground="Black"
+            CaretBrush="Black"
+            BorderBrush="Black"
+            BorderThickness="0,0,0,2"
+            Height="28"
+            VerticalContentAlignment="Center"
+            Margin="245,355,293,0"
+            Padding="5,0,0,0" VerticalAlignment="Top" TextChanged="txtUser_Copy_TextChanged" />
+        <TextBlock Text="Department"
+            Foreground="Black"
+            FontSize="25"
+            FontWeight="Medium"
+            FontFamily="Arial bold"                             
+            Margin="30,356,1007,362"/>
+
+
+
+
+
+    </Grid>
+
+
+
+
+
+
+</Page>
